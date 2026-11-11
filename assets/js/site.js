@@ -56,9 +56,9 @@ document.querySelectorAll('button.copy').forEach(function(b){
   var r=null; try{r=JSON.parse(st.getItem(KEY))}catch(e){}
   if(!r||!r.file)return;
   var href=r.file+'.html', title=r[lang]||r.en;
-  back.href=href; back.textContent='← '+title;
+  back.href=href; back.textContent=lang==='ua'?'← Назад до портфоліо':'← Back to portfolio';
   var brand=document.querySelector('a.brand'); if(brand)brand.href=href;
-  var first=document.querySelector('nav.next a'); if(first){first.href=href; var s=first.querySelector('strong'); if(s)s.textContent=title; var sm=first.querySelector('small'); if(sm)sm.textContent=lang==='ua'?'Назад до':'Back to';}
+  var first=document.querySelector('nav.next a'); if(first){first.href=href; var s=first.querySelector('strong'); if(s)s.textContent=lang==='ua'?'Портфоліо':'Portfolio'; var sm=first.querySelector('small'); if(sm)sm.textContent=lang==='ua'?'Назад до':'Back to';}
   var cs=r.cases||[], here=location.pathname.split('/').pop().replace('.html','');
   var i=-1; for(var k=0;k<cs.length;k++){if(cs[k].id===here)i=k}
   var nx=document.querySelector('nav.next a[style]');

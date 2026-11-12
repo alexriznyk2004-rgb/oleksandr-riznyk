@@ -150,6 +150,7 @@ section.block{padding-block:clamp(64px,9vw,128px) 0}
 .grid{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:clamp(8px,1.2vw,16px)}
 .grid.n2{--n:2}.grid.n4{--n:4}
 .grid figure{overflow:hidden;background:var(--graphite)}
+.grid figure:has(img[src*="-mesh-"]){background:none}
 .grid img,.grid video{width:100%;aspect-ratio:9/16;object-fit:cover}
 .grid button.zoom{display:block;width:100%;border:0;padding:0;background:none;cursor:zoom-in}
 @media (max-width:760px){.grid{--n:2}.grid.n2{--n:1}.grid.n4{--n:2}}

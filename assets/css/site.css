@@ -2,10 +2,11 @@
 @font-face{font-family:"Jost UA";src:url(../fonts/jost-ua-light.woff) format("woff");font-weight:300;font-display:swap;unicode-range:U+0404,U+0406-0407,U+0454,U+0456-0457,U+0490-0491}
 @font-face{font-family:"Jost UA";src:url(../fonts/jost-ua-regular.woff) format("woff");font-weight:400;font-display:swap;unicode-range:U+0404,U+0406-0407,U+0454,U+0456-0457,U+0490-0491}
 @font-face{font-family:"Jost UA";src:url(../fonts/jost-ua-medium.woff) format("woff");font-weight:500;font-display:swap;unicode-range:U+0404,U+0406-0407,U+0454,U+0456-0457,U+0490-0491}
+@font-face{font-family:"Syncopate PL";src:url(../fonts/syncopate-pl-bold.woff) format("woff");font-weight:700;font-display:swap;unicode-range:U+00D3,U+00F3,U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
 @font-face{font-family:"Jost UA";src:url(../fonts/jost-ua-semibold.woff) format("woff");font-weight:600;font-display:swap;unicode-range:U+0404,U+0406-0407,U+0454,U+0456-0457,U+0490-0491}
 :root{
   --ink:#0F1113; --graphite:#171A1D; --line:#2A2E33; --bone:#E9E5DE; --stone:#9A948C; --brass:#C2A27A;
-  --display:"Syncopate","Unbounded",system-ui,sans-serif; --text:"Jost","Jost UA",system-ui,sans-serif;
+  --display:"Syncopate","Syncopate PL","Unbounded",system-ui,sans-serif; --text:"Jost","Jost UA",system-ui,sans-serif;
   --gutter:clamp(16px,4vw,56px); --max:1440px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
